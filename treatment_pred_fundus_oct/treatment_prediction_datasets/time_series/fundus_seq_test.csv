@@ -1,0 +1,21 @@
+File_Path,BCVA,CST,Eye_ID,Patient_ID,Treatment_Final
+/Prime_FULL/01-001/sequence_58.npy,97.0,275.0,58,58,0
+/Prime_FULL/01-002/sequence_59.npy,68.0,238.0,59,59,0
+/Prime_FULL/01-012/sequence_60.npy,86.0,277.0,60,60,0
+/Prime_FULL/01-013/sequence_61.npy,88.0,303.0,61,61,0
+/Prime_FULL/01-014/sequence_62.npy,95.0,256.0,62,62,1
+/Prime_FULL/01-020/sequence_63.npy,73.0,223.0,63,63,1
+/Prime_FULL/01-023/sequence_64.npy,81.0,267.0,64,64,1
+/Prime_FULL/01-025/sequence_65.npy,75.0,236.0,65,65,1
+/Prime_FULL/01-026/sequence_66.npy,85.0,311.0,66,66,0
+/Prime_FULL/02-010/sequence_57.npy,88.0,307.0,57,57,1
+/TREX DME/GILA/0201GOD/sequence_1.npy,63.0,575.0,1,201,0
+/TREX DME/GILA/0203GOS/sequence_2.npy,25.0,392.0,2,203,0
+/TREX DME/GILA/0204GOS/sequence_3.npy,50.0,539.0,3,204,0
+/TREX DME/GILA/0213GOD/sequence_4.npy,50.0,516.0,4,213,0
+/TREX DME/GILA/0215GOS/sequence_5.npy,63.0,335.0,5,215,0
+/TREX DME/GILA/0217GOS/sequence_6.npy,40.0,315.0,6,217,1
+/TREX DME/GILA/0221GOD/sequence_7.npy,25.0,371.0,7,221,0
+/TREX DME/GILA/0225GOS/sequence_8.npy,32.0,323.0,8,225,0
+/TREX DME/GILA/0226GOD/sequence_9.npy,40.0,602.0,9,226,0
+/TREX DME/GILA/0229GOD/sequence_10.npy,32.0,428.0,10,229,0

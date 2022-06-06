@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# BCVA + CST
+python training_main/main_linear.py --batch_size 10 --dataset 'Fundus_Treatment' --epochs 25 --learning_rate .0001 --train_csv_path '/home/kiran/Desktop/Dev/NeurIPS_2022_Dataset/treatment_prediction_datasets/fundus_dir/fundus_treatment.csv' --test_csv_path '/home/kiran/Desktop/Dev/NeurIPS_2022_Dataset/treatment_prediction_datasets/fundus_dir/fundus_treatment_test.csv' --train_image_path '/data/Datasets' --test_image_path '/data/Datasets'
+
+
+#python training_main/main_linear.py --batch_size 10 --dataset 'OCT_3D' --learning_rate .0001 --epochs 25 --train_csv_path '/home/kiran/Desktop/Dev/NeurIPS_2022_Dataset/treatment_prediction_datasets/3d_volume_OCT/volume_dir_treatment.csv' --test_csv_path '/home/kiran/Desktop/Dev/NeurIPS_2022_Dataset/treatment_prediction_datasets/3d_volume_OCT/volume_dir_test_treatment.csv' --train_image_path '/data/Datasets' --test_image_path '/data/Datasets'
+
+
+
+
+#python training_main/main_linear.py --batch_size 1 --dataset 'Fundus_Time_Series' --epochs 25 --train_csv_path '/home/kiran/Desktop/Dev/NeurIPS_2022_Dataset/treatment_prediction_datasets/time_series/fundus_seq.csv' --test_csv_path '/home/kiran/Desktop/Dev/NeurIPS_2022_Dataset/treatment_prediction_datasets/time_series/fundus_seq_test.csv' --train_image_path '/data/Datasets/' --test_image_path '/data/Datasets/'
+
+
+#python training_main/main_linear.py --batch_size 1 --dataset 'OCT_3D_Time_Series' --epochs 25 --train_csv_path '/home/kiran/Desktop/Dev/NeurIPS_2022_Dataset/treatment_prediction_datasets/time_series/volume_seq.csv' --test_csv_path '/home/kiran/Desktop/Dev/NeurIPS_2022_Dataset/treatment_prediction_datasets/time_series/volume_seq_test.csv' --train_image_path '' --test_image_path ''

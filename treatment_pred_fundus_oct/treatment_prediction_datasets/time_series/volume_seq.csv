@@ -1,0 +1,77 @@
+File_Path,BCVA,CST,Eye_ID,Patient_ID,Treatment_Final
+/data/Datasets/Prime_FULL/02-008/sequence_3d_77.npy,84,259,77,77,1
+/data/Datasets/Prime_FULL/02-031/sequence_3d_86.npy,78,312,86,86,0
+/data/Datasets/Prime_FULL/01-027/sequence_3d_67.npy,89,292,67,67,0
+/data/Datasets/Prime_FULL/01-028/sequence_3d_68.npy,59,287,68,68,1
+/data/Datasets/Prime_FULL/01-035/sequence_3d_69.npy,81,240,69,69,1
+/data/Datasets/Prime_FULL/01-037/sequence_3d_70.npy,95,280,70,70,0
+/data/Datasets/Prime_FULL/01-038/sequence_3d_71.npy,80,244,71,71,1
+/data/Datasets/Prime_FULL/01-040/sequence_3d_72.npy,80,247,72,72,1
+/data/Datasets/Prime_FULL/01-047/sequence_3d_73.npy,94,278,73,73,0
+/data/Datasets/Prime_FULL/01-048/sequence_3d_74.npy,82,268,74,74,1
+/data/Datasets/Prime_FULL/02-004/sequence_3d_75.npy,77,264,75,75,1
+/data/Datasets/Prime_FULL/02-005/sequence_3d_76.npy,89,260,76,76,0
+/data/Datasets/Prime_FULL/02-015/sequence_3d_78.npy,71,274,78,78,1
+/data/Datasets/Prime_FULL/02-016/sequence_3d_79.npy,82,271,79,79,1
+/data/Datasets/Prime_FULL/02-017/sequence_3d_80.npy,88,284,80,80,1
+/data/Datasets/Prime_FULL/02-018/sequence_3d_81.npy,82,258,81,81,1
+/data/Datasets/Prime_FULL/02-019/sequence_3d_82.npy,87,271,82,82,1
+/data/Datasets/Prime_FULL/02-024/sequence_3d_83.npy,86,273,83,83,1
+/data/Datasets/Prime_FULL/02-029/sequence_3d_84.npy,89,253,84,84,0
+/data/Datasets/Prime_FULL/02-030/sequence_3d_85.npy,93,301,85,85,0
+/data/Datasets/Prime_FULL/02-032/sequence_3d_87.npy,75,305,87,87,0
+/data/Datasets/Prime_FULL/02-034/sequence_3d_88.npy,88,262,88,88,1
+/data/Datasets/Prime_FULL/02-036/sequence_3d_89.npy,90,284,89,89,0
+/data/Datasets/Prime_FULL/02-039/sequence_3d_90.npy,90,291,90,90,0
+/data/Datasets/Prime_FULL/02-041/sequence_3d_91.npy,84,274,91,91,1
+/data/Datasets/Prime_FULL/02-042/sequence_3d_92.npy,79,256,92,92,1
+/data/Datasets/Prime_FULL/02-043/sequence_3d_93.npy,83,226,93,93,1
+/data/Datasets/Prime_FULL/02-044/sequence_3d_94.npy,79,220,94,94,1
+/data/Datasets/Prime_FULL/02-045/sequence_3d_95.npy,74,302,95,95,0
+/data/Datasets/Prime_FULL/02-046/sequence_3d_96.npy,89,283,96,96,0
+/data/Datasets/TREX DME/GILA/sequence_3d_12.npy,73,517,12,234,1
+/data/Datasets/TREX DME/GILA/sequence_3d_11.npy,57,607,11,232,1
+/data/Datasets/TREX DME/GILA/sequence_3d_13.npy,69,300,13,236,1
+/data/Datasets/TREX DME/GILA/sequence_3d_14.npy,82,349,14,238,0
+/data/Datasets/TREX DME/GILA/sequence_3d_15.npy,79,387,15,239,1
+/data/Datasets/TREX DME/GILA/sequence_3d_16.npy,73,549,16,241,1
+/data/Datasets/TREX DME/GILA/sequence_3d_17.npy,67,667,17,243,1
+/data/Datasets/TREX DME/GILA/sequence_3d_18.npy,73,533,18,247,1
+/data/Datasets/TREX DME/GILA/sequence_3d_19.npy,76,281,19,249,0
+/data/Datasets/TREX DME/GILA/sequence_3d_20.npy,64,616,20,251,1
+/data/Datasets/TREX DME/GILA/sequence_3d_21.npy,61,486,21,252,1
+/data/Datasets/TREX DME/GILA/sequence_3d_22.npy,67,550,22,256,1
+/data/Datasets/TREX DME/Monthly/sequence_3d_23.npy,64,413,23,204,1
+/data/Datasets/TREX DME/Monthly/sequence_3d_24.npy,82,416,24,206,1
+/data/Datasets/TREX DME/Monthly/sequence_3d_25.npy,59,593,25,210,1
+/data/Datasets/TREX DME/Monthly/sequence_3d_26.npy,71,481,26,212,1
+/data/Datasets/TREX DME/Monthly/sequence_3d_27.npy,60,531,27,216,1
+/data/Datasets/TREX DME/Monthly/sequence_3d_28.npy,52,253,28,218,1
+/data/Datasets/TREX DME/Monthly/sequence_3d_29.npy,48,715,29,219,0
+/data/Datasets/TREX DME/Monthly/sequence_3d_30.npy,78,277,30,222,1
+/data/Datasets/TREX DME/Monthly/sequence_3d_31.npy,68,365,31,245,1
+/data/Datasets/TREX DME/Monthly/sequence_3d_32.npy,73,511,32,248,1
+/data/Datasets/TREX DME/Monthly/sequence_3d_33.npy,77,291,33,249,0
+/data/Datasets/TREX DME/Monthly/sequence_3d_34.npy,66,699,34,253,1
+/data/Datasets/TREX DME/TREX/sequence_3d_46.npy,80,392,46,230,0
+/data/Datasets/TREX DME/TREX/sequence_3d_35.npy,61,476,35,201,1
+/data/Datasets/TREX DME/TREX/sequence_3d_36.npy,79,463,36,207,1
+/data/Datasets/TREX DME/TREX/sequence_3d_37.npy,63,650,37,208,1
+/data/Datasets/TREX DME/TREX/sequence_3d_38.npy,66,518,38,209,1
+/data/Datasets/TREX DME/TREX/sequence_3d_39.npy,82,612,39,211,1
+/data/Datasets/TREX DME/TREX/sequence_3d_40.npy,62,516,40,213,1
+/data/Datasets/TREX DME/TREX/sequence_3d_41.npy,52,581,41,220,1
+/data/Datasets/TREX DME/TREX/sequence_3d_42.npy,57,364,42,222,1
+/data/Datasets/TREX DME/TREX/sequence_3d_43.npy,77,344,43,224,0
+/data/Datasets/TREX DME/TREX/sequence_3d_44.npy,68,536,44,226,1
+/data/Datasets/TREX DME/TREX/sequence_3d_45.npy,77,338,45,228,1
+/data/Datasets/TREX DME/TREX/sequence_3d_47.npy,59,412,47,231,1
+/data/Datasets/TREX DME/TREX/sequence_3d_48.npy,72,443,48,232,1
+/data/Datasets/TREX DME/TREX/sequence_3d_49.npy,75,415,49,234,1
+/data/Datasets/TREX DME/TREX/sequence_3d_50.npy,70,489,50,235,1
+/data/Datasets/TREX DME/TREX/sequence_3d_51.npy,41,630,51,237,1
+/data/Datasets/TREX DME/TREX/sequence_3d_52.npy,54,611,52,240,1
+/data/Datasets/TREX DME/TREX/sequence_3d_53.npy,66,392,53,242,1
+/data/Datasets/TREX DME/TREX/sequence_3d_54.npy,67,441,54,243,1
+/data/Datasets/TREX DME/TREX/sequence_3d_55.npy,81,347,55,254,1
+/data/Datasets/TREX DME/TREX/sequence_3d_56.npy,64,498,56,255,1
