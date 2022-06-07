@@ -237,7 +237,27 @@ def generate_last_csv(csv_file,target_dir):
             df_new.loc[len(df_new)] = [df_eye.iloc[0, 0], df_eye.iloc[0, 1], df_eye.iloc[0, 2], df_eye.iloc[0, 3],
                                        df_eye.iloc[0, 4], df_eye.iloc[0, 5], 0]
     df_new.to_csv(target_dir,index=False)
+
+def average_weeks(csv_file):
+    df = pd.read_csv(csv_file)
+    df['Week'] = ""
+    # Attach Week Number
+    for i in range(0, len(df)):
+        path = df.iloc[i, 0]
+        split = path.split('/')
+        week = split[-3]
+        week_num = int(week[1:])
+        df.iloc[i, 5] = week_num
+
+    eye_list = df['Eye_ID'].unique()
+    sum = 0
+    total = 0
+    for j in range(0, len(eye_list)):
+        df_eye = df.loc[df['Eye_ID'] == eye_list[j]]
+        df_eye = df_eye.sort_values(by='Week')
+        sum = sum + len(df_eye)
+        total = total + 1
+    print(sum/total)
 if __name__ == '__main__':
-    csv_file = '/home/kiran/Desktop/Dev/NeurIPS_2022_Dataset/treatment_prediction_datasets/fundus_dir/fundus_test.csv'
-    target_dir = '/home/kiran/Desktop/Dev/NeurIPS_2022_Dataset/treatment_prediction_datasets/fundus_dir/fundus_last_test.csv'
-    generate_last_csv(csv_file,target_dir)
+    csv_file = '/home/kiran/Desktop/Dev/OLIVES_Dataset/treatment_prediction_datasets/fundus_dir/fundus.csv'
+    average_weeks(csv_file)

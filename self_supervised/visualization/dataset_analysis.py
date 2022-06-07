@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 from mayavi import mlab
 import matplotlib
-
+import seaborn as sns
+import matplotlib.ticker as ticker
 def trex_dme_concatenation(trex_dir):
     directories = os.listdir(trex_dir)
     total_data = []
@@ -458,11 +459,10 @@ def clinical_assoc(df):
         if (bcva not in bcva_vector):
             bcva_vector.append(bcva)
 
-    bcva_count_tracker = np.zeros((len(bcva_vector)))
 
     bcva_count_eye = np.zeros((len(bcva_vector)))
 
-    cst_count_tracker = np.zeros((len(cst_vector)))
+
     cst_count_eye = np.zeros((len(cst_vector)))
 
     bcva_vector = np.array(bcva_vector)
@@ -476,16 +476,11 @@ def clinical_assoc(df):
         for i in range(0, len(df)):
             bcva = df.iloc[i, 1]
             eye = df.iloc[i, 3]
-            if (bcva == target_bcva):
-                bcva_count_tracker[j] += 1
             if (bcva == target_bcva and (eye not in eye_tracker)):
                 bcva_count_eye[j] += 1
                 eye_tracker.append(eye)
 
     x = np.array(bcva_vector).T
-    y = np.array(bcva_count_tracker).T
-    x = x.astype(float)
-    y = y.astype(float)
 
 
     for j in tqdm(range(0, len(cst_vector))):
@@ -494,35 +489,27 @@ def clinical_assoc(df):
         for i in range(0, len(df)):
             cst = df.iloc[i, 2]
             eye = df.iloc[i, 3]
-            if (cst == target_cst):
-                cst_count_tracker[j] += 1
+
             if (cst == target_cst and (eye not in eye_tracker)):
                 cst_count_eye[j] += 1
                 eye_tracker.append(eye)
 
-    matplotlib.rcParams.update({'font.size': 22})
-    plt.figure(1)
-    plt.bar(cst_vector, cst_count_tracker)
-    plt.xlabel('CST values')
-    plt.ylabel('Image Count')
+    matplotlib.rcParams.update({'font.size': 15})
+    plt.rcParams["figure.autolayout"] = True
+    fig,ax = plt.subplots()
     plt.grid()
-    plt.title('CST values vs. Image Count')
-    plt.figure(2)
-    plt.grid()
-    plt.bar(cst_vector, cst_count_eye)
+    #plt.bar(cst_vector, cst_count_eye)
+    sns.barplot(x=cst_vector,y=cst_count_eye,color='green')
+    ax.xaxis.set_major_locator(ticker.MultipleLocator(50))
+    plt.tight_layout()
     plt.xlabel('CST values')
     plt.ylabel('Eye Count')
     plt.title('CST values vs. Eye Count')
-    plt.figure(3)
+    fig,ax = plt.subplots()
     plt.grid()
-
-    plt.bar(bcva_vector, bcva_count_tracker)
-    plt.xlabel('BCVA values')
-    plt.ylabel('Image Count')
-    plt.title('BCVA values vs. Image Count')
-    plt.figure(4)
-    plt.grid()
-    plt.bar(bcva_vector, bcva_count_eye)
+    sns.barplot(x=bcva_vector,y=bcva_count_eye,color='red')
+    ax.xaxis.set_major_locator(ticker.MultipleLocator(10))
+    #plt.setp(ax.get_xticklabels(), rotation=30, horizontalalignment='right')
     plt.xlabel('BCVA values')
     plt.ylabel('Eye Count')
     plt.title('BCVA values vs. Eye Count')
@@ -578,6 +565,5 @@ def percentage_training_set(csv_file,target_dir,frac):
     df.to_csv(target_dir,index=False)
 
 if __name__ == '__main__':
-    data_dir = '/home/kiran/Desktop/Dev/SupCon_OCT_Clinical/final_csvs_3/biomarker_csv_files/complete_biomarker_training.csv'
-    target_dir = '/home/kiran/Desktop/Dev/SupCon_OCT_Clinical/final_csvs_3/biomarker_csv_files/complete_biomarker_training_25.csv'
-    percentage_training_set(data_dir,target_dir,.25)
+    data_dir = '/home/kiran/Desktop/Dev/OLIVES_Dataset/final_csvs_1/datasets_combined/prime_trex_compressed.csv'
+    clinical_assoc(data_dir)
