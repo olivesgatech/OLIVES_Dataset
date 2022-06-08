@@ -20,6 +20,6 @@ If you find the work useful, please include the following citation in your work:
   title={OLIVES Dataset: Ophthalmic Labels for Investigating
 Visual Eye Semantics},\
   author={Prabhushankar, Mohit, Kokilepersaud, Kiran, Logan, Yash-yee, Trejo Corona, Stephanie, AlRegib, Ghassan and Wykoff, Charles},\
-  booktitle={2022 },\
+  booktitle={Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks 2 (NeurIPS Datasets and Benchmarks 2022) },\
   year={2022}\
 }
