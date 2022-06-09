@@ -19,7 +19,7 @@ If you find the work useful, please include the following citation in your work:
 >@inproceedings{prabhushankarolives2022,\
   title={OLIVES Dataset: Ophthalmic Labels for Investigating
 Visual Eye Semantics},\
-  author={Prabhushankar, Mohit, Kokilepersaud, Kiran, Logan, Yash-yee, Trejo Corona, Stephanie, AlRegib, Ghassan and Wykoff, Charles},\
+  author={Prabhushankar, Mohit and Kokilepersaud, Kiran and Logan, Yash-yee and Trejo Corona, Stephanie and AlRegib, Ghassan and Wykoff, Charles},\
   booktitle={Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks 2 (NeurIPS Datasets and Benchmarks 2022) },\
   year={2022}\
 }
