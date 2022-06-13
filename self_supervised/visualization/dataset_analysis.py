@@ -497,18 +497,18 @@ def clinical_assoc(df):
     matplotlib.rcParams.update({'font.size': 15})
     plt.rcParams["figure.autolayout"] = True
     fig,ax = plt.subplots()
-    plt.grid()
     #plt.bar(cst_vector, cst_count_eye)
     sns.barplot(x=cst_vector,y=cst_count_eye,color='green')
     ax.xaxis.set_major_locator(ticker.MultipleLocator(50))
+    plt.grid()
     plt.tight_layout()
     plt.xlabel('CST values')
     plt.ylabel('Eye Count')
     plt.title('CST values vs. Eye Count')
     fig,ax = plt.subplots()
-    plt.grid()
     sns.barplot(x=bcva_vector,y=bcva_count_eye,color='red')
     ax.xaxis.set_major_locator(ticker.MultipleLocator(10))
+    plt.grid()
     #plt.setp(ax.get_xticklabels(), rotation=30, horizontalalignment='right')
     plt.xlabel('BCVA values')
     plt.ylabel('Eye Count')
@@ -565,5 +565,5 @@ def percentage_training_set(csv_file,target_dir,frac):
     df.to_csv(target_dir,index=False)
 
 if __name__ == '__main__':
-    data_dir = '/home/kiran/Desktop/Dev/OLIVES_Dataset/final_csvs_1/datasets_combined/prime_trex_compressed.csv'
+    data_dir = '/home/kiran/Desktop/Dev/SupCon_OCT_Clinical/final_csvs_1/datasets_combined/prime_trex_compressed.csv'
     clinical_assoc(data_dir)

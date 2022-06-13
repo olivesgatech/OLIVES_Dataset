@@ -118,9 +118,9 @@ def generate_polar_plot(csv_file):
     print(degrees_total)
     if(degrees_total < 0):
         degrees_total = 360 + degrees_total
-    plt.rc('grid', color='black', linewidth=1, linestyle='-')
-    plt.rc('xtick', labelsize=15)
-    plt.rc('ytick', labelsize=15)
+    #plt.rc('grid', color='black', linewidth=1, linestyle='-')
+    #plt.rc('xtick', labelsize=15)
+    #plt.rc('ytick', labelsize=15)
 
     # force square figure and square axes looks better for polar, IMO
     width, height = plt.rcParams['figure.figsize']
@@ -128,14 +128,14 @@ def generate_polar_plot(csv_file):
     print(size)
     # make a square figure
     fig = plt.figure(figsize=(size, size))
-    ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
+    #ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
     ############ Colorbar
 
 
     arr2 = plt.arrow(degrees_total / 180. * np.pi, .2, 0, .4, alpha=0.5, width=0.08,
                      edgecolor='black', facecolor='black', lw=1, zorder=5)
-    ax.patch.set_facecolor((degrees_total/360, .25,.5))
-    ax.patch.set_alpha(.8)
+    #ax.patch.set_facecolor((degrees_total/360, .25,.5))
+    #ax.patch.set_alpha(.8)
 
     ax.set_rmax(1.0)
     plt.title('Polar Representation of Disease Progression')

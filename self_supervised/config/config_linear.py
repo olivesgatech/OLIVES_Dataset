@@ -89,25 +89,8 @@ def parse_option():
         else:
             opt.warmup_to = opt.learning_rate
 
-    if opt.dataset == 'cifar10':
-        opt.n_cls = 10
-    elif opt.dataset == 'cifar100':
-        opt.n_cls = 100
-    elif opt.dataset == 'Ford':
-        opt.n_cls = 3
-    elif opt.dataset == 'Ford_Region':
-        opt.n_cls = 3
-    elif opt.dataset == 'covid_kaggle':
-        opt.n_cls = 4
-    elif opt.dataset == 'qu_dataset':
-        opt.n_cls = 3
-    elif opt.dataset == 'covid_x':
-        opt.n_cls = 2
-    elif opt.dataset == 'covid_x_A':
-        opt.n_cls = 3
-    elif opt.dataset == 'OCT':
-        opt.n_cls = 4
-    elif opt.dataset == 'Prime':
+
+    if opt.dataset == 'Prime':
         opt.n_cls = 2
     else:
         raise ValueError('dataset not supported: {}'.format(opt.dataset))
