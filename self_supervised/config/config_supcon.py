@@ -47,12 +47,11 @@ def parse_option():
     parser.add_argument('--model', type=str, default='resnet18')
     parser.add_argument('--dataset', type=str, default='TREX_DME',
                         choices=[ 'OCT', 'OCT_Cluster', 'Prime', 'PrimeBio',
-                                 'Recovery_Compressed',
                                  'Prime_Comb_Bio', 'CombinedBio', 'CombinedBio_Modfied', 'Patient_Split_2_Prime_TREX',
                                  'Patient_Split_3_Prime_TREX', 'Alpha',
                                  'Prime_Compressed', 'Prime_TREX_DME_Fixed', 'Prime_TREX_Alpha',
                                  'Prime_TREX_DME_Discrete',
-                                 'Recovery', 'TREX_DME'], help='dataset')
+                                  'TREX_DME'], help='dataset')
     parser.add_argument('--mean', type=str, help='mean of dataset in path in form of str tuple')
     parser.add_argument('--std', type=str, help='std of dataset in path in form of str tuple')
     parser.add_argument('--data_folder', type=str, default=None, help='path to custom dataset')

@@ -111,26 +111,10 @@ def set_loader(opt):
         csv_path_train = './final_csvs_' + str(opt.patient_split) +'/complete_biomarker_training.csv'
         data_path_train =  opt.train_image_path#'/data/Datasets/Prime_FULL_128'
         train_dataset = BiomarkerDatasetAttributes(csv_path_train, data_path_train, transforms=TwoCropTransform(train_transform))
-    elif opt.dataset == 'Recovery':
-        csv_path_train = opt.train_csv_path
-        data_path_train = opt.train_image_path
-        train_dataset = recovery(csv_path_train, data_path_train, transforms=TwoCropTransform(train_transform))
     elif opt.dataset == 'TREX_DME':
         csv_path_train = './final_csvs_' + str(opt.patient_split) +'/datasets_combined/trex_compressed.csv'
         data_path_train = opt.train_image_path
         train_dataset = TREX(csv_path_train, data_path_train, transforms=TwoCropTransform(train_transform))
-    elif opt.dataset == 'TREX_DME_Recovery':
-        csv_path_train = './final_csvs_' + str(opt.patient_split) +'/datasets_combined/trex_compressed.csv'
-        data_path_train = opt.train_image_path
-        train_dataset = CombinedDataset(csv_path_train, data_path_train, transforms=TwoCropTransform(train_transform))
-    elif opt.dataset == 'Prime_Recovery':
-        csv_path_train = './final_csvs_' + str(opt.patient_split) +'/datasets_combined/trex_compressed.csv'
-        data_path_train = opt.train_image_path
-        train_dataset = CombinedDataset(csv_path_train, data_path_train, transforms=TwoCropTransform(train_transform))
-    elif opt.dataset == 'Prime_Recovery_TREX_DME':
-        csv_path_train = './final_csvs_' + str(opt.patient_split) +'/datasets_combined/trex_compressed.csv'
-        data_path_train = opt.train_image_path
-        train_dataset = CombinedDataset(csv_path_train, data_path_train, transforms=TwoCropTransform(train_transform))
     elif opt.dataset == 'Prime_TREX_DME_Fixed' or opt.dataset == 'Prime_TREX_Alpha' \
             or opt.dataset == 'Patient_Split_2_Prime_TREX' or opt.dataset == 'Patient_Split_3_Prime_TREX':
         csv_path_train = './final_csvs_' + str(opt.patient_split) +'/datasets_combined/prime_trex_compressed.csv'
@@ -142,10 +126,6 @@ def set_loader(opt):
         train_dataset = CombinedDataset(csv_path_train, data_path_train, transforms=TwoCropTransform(train_transform))
     elif opt.dataset == 'Prime_Compressed':
         csv_path_train = './final_csvs_' + str(opt.patient_split) +'/datasets_combined/prime_compressed.csv'
-        data_path_train = opt.train_image_path
-        train_dataset = CombinedDataset(csv_path_train, data_path_train, transforms=TwoCropTransform(train_transform))
-    elif opt.dataset == 'Recovery_Compressed':
-        csv_path_train = './final_csvs_' + str(opt.patient_split) +'/datasets_combined/recovery_compressed.csv'
         data_path_train = opt.train_image_path
         train_dataset = CombinedDataset(csv_path_train, data_path_train, transforms=TwoCropTransform(train_transform))
     elif opt.dataset == 'OCT_Cluster':
