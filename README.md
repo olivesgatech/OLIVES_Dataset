@@ -6,6 +6,10 @@ Clinical diagnosis of the eye is performed over multifarious data modalities inc
 ## Dataset
 Images: https://doi.org/10.5281/zenodo.6622145
 ## Code Usage
+
+Self-Supervised Experiments:
+
+Treatment Prediction with Fundus and OCT Experiments:
 ## Links
 
 **Associated Website**: https://ghassanalregib.info/
