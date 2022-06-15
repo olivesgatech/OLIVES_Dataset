@@ -6,12 +6,12 @@ Clinical diagnosis of the eye is performed over multifarious data modalities inc
 ## Dataset
 Images: https://doi.org/10.5281/zenodo.6622145
 
-Labels:
+**Labels**:
 There are two directories for the labels: full_labels and ml_centric labels. 
 
-Full labels contain all the clinical inforamtion used in these studies for the associated studies of interest.
+**Full labels** contain all the clinical inforamtion used in these studies for the associated studies of interest.
 
-ML Centric labels are divided into two files: Biomarker_Clinical_Data_Images.csv and Clinical_Data_Images.xlsx. 
+**ML Centric labels** are divided into two files: Biomarker_Clinical_Data_Images.csv and Clinical_Data_Images.xlsx. 
 
 Biomarker_Clinical_Data_Images.csv contains full biomarker and clinical labels for the 9408 images that have this labeled biomarker information.
 
