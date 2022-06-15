@@ -30,8 +30,10 @@ python training_main/clinical_sup_contrast.py --dataset 'Prime_TREX_DME_Fixed' -
 a) Set the super flag to identify whether to use contrastively trained backbone (0), completely supervised (1), or fusion supervised (2). \
 b) Set the multi flag to (1) in order to control whether multi-label classification is used and (0) otherwise. \
 c) If not using multi-label classification, then set the biomarker flag to the biomarker of interest used in this study. \
-c) An example of this script would be: \
+d) An example of this script would be: \
 python training_main/main_linear.py --dataset 'Prime' --multi 0 --super 0 --ckpt 'path_to_checkpoint file' --biomarker 'fluid_irf' \
+
+
 **Treatment Prediction with Fundus and OCT Experiments**:
 
 ## Links
