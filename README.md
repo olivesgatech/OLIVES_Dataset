@@ -25,7 +25,7 @@ Clinical_Data_Images.xlsx has the BCVA, CST, Eye ID, and Patient ID for the 7800
 a) Specify number of clinical labels to train with --num_methods parameter \
 b) Specify which clinical labels to train with --method1, --method2, etc. \
 c) An example of a script would be: \
-python training_main/clinical_sup_contrast.py --dataset 'Prime_TREX_DME_Fixed' --num_methods 1 --method1 'bcva' \
+python training_main/clinical_sup_contrast.py --dataset 'Prime_TREX_DME_Fixed' --num_methods 1 --method1 'bcva'
 3. Train the appended linear using the parameters specified in config/config_linear.py \
 a) Set the super flag to identify whether to use contrastively trained backbone (0), completely supervised (1), or fusion supervised (2). \
 b) Set the multi flag to (1) in order to control whether multi-label classification is used and (0) otherwise. \
