@@ -31,16 +31,17 @@ a) Set the super flag to identify whether to use contrastively trained backbone 
 b) Set the multi flag to (1) in order to control whether multi-label classification is used and (0) otherwise. \
 c) If not using multi-label classification, then set the biomarker flag to the biomarker of interest used in this study. \
 d) An example of this script would be: \
-python training_main/main_linear.py --dataset 'Prime' --multi 0 --super 0 --ckpt 'path_to_checkpoint file' --biomarker 'fluid_irf' \
+python training_main/main_linear.py --dataset 'Prime' --multi 0 --super 0 --ckpt 'path_to_checkpoint file' --biomarker 'fluid_irf'
 
 
 **Treatment Prediction with Fundus and OCT Experiments**:
-1. Go to the treatment_pred_fundus_oct directory and set the python path with: export PYTHONPATH=$PYTHONPATH:$PWD. \
-2. Generate the treatment labels using the clinical labels provided. In the paper, these treatment labels were defined with respect to an increase of BCVA on a week to week basis. Save these labels in a csv file and set the train and test path for the generated file within the config/config_linear.py file. \
-3. Train the backbone network by setting the parameters of interest in the config/config_linear.py file. \
+1. Go to the treatment_pred_fundus_oct directory and set the python path with: export PYTHONPATH=$PYTHONPATH:$PWD. 
+2. Generate the treatment labels using the clinical labels provided. In the paper, these treatment labels were defined with respect to an increase of BCVA on a week to week basis. Save these labels in a csv file and set the train and test path for the generated file within the config/config_linear.py file. 
+3. Train the backbone network by setting the parameters of interest in the config/config_linear.py file. 
 4. Set whether training utilizes Fundus or OCT Volumes of data. 
 5. An example usage of this directory would be: \ 
 python training_main/main_linear.py --dataset 'Fundus_Treatment' --train_csv_path 'path to csv' --test_csv_path 'path to csv' --super 1 --epochs 50
+
 ## Links
 
 **Associated Website**: https://ghassanalregib.info/
