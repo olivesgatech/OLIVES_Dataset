@@ -39,7 +39,7 @@ python training_main/main_linear.py --dataset 'Prime' --multi 0 --super 0 --ckpt
 2. Generate the treatment labels using the clinical labels provided. In the paper, these treatment labels were defined with respect to an increase of BCVA on a week to week basis. Save these labels in a csv file and set the train and test path for the generated file within the config/config_linear.py file. 
 3. Train the backbone network by setting the parameters of interest in the config/config_linear.py file. 
 4. Set whether training utilizes Fundus or OCT Volumes of data. 
-5. An example usage of this directory would be: \ 
+5. An example usage of this directory would be:
 python training_main/main_linear.py --dataset 'Fundus_Treatment' --train_csv_path 'path to csv' --test_csv_path 'path to csv' --super 1 --epochs 50
 
 ## Links
