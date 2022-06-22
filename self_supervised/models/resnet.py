@@ -294,7 +294,7 @@ class LinearClassifier(nn.Module):
 
 class LinearClassifier_MultiLabel(nn.Module):
     """Linear classifier"""
-    def __init__(self, name='resnet50', num_classes=2):
+    def __init__(self, name='resnet18', num_classes=2):
         super(LinearClassifier_MultiLabel, self).__init__()
         _, feat_dim = model_dict[name]
         self.fc = nn.Linear(feat_dim, num_classes)

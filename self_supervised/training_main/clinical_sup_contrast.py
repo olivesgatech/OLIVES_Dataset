@@ -12,7 +12,6 @@ from training_supcon.training_one_epoch_alpha import train_Alpha
 
 from training_supcon.training_one_epoch_prime import train_Prime
 from training_supcon.training_one_epoch_prime_trex_combined import train_Combined
-from training_supcon.training_one_epoch_recovery import train_Recovery
 
 def main():
     opt = parse_option()
@@ -40,13 +39,9 @@ def main():
             loss = train_Bio(train_loader, model, criterion, optimizer, epoch, opt)
         elif(opt.dataset == 'Prime'):
             loss = train_Prime(train_loader, model, criterion, optimizer, epoch, opt)
-        elif (opt.dataset == 'Recovery'):
-            loss = train_Recovery(train_loader, model, criterion, optimizer, epoch, opt)
         elif(opt.dataset == 'TREX_DME'):
             loss = train_TREX(train_loader, model, criterion, optimizer, epoch, opt)
-        elif(opt.dataset == 'Prime_Recovery'
-             or opt.dataset =='Prime_Compressed' or opt.dataset == 'Recovery_Compressed'
-             or opt.dataset == 'Prime_TREX_DME_Fixed' or opt.dataset == 'Prime_TREX_DME_Discrete') \
+        elif(opt.dataset == 'Prime_TREX_DME_Fixed' or opt.dataset == 'Prime_TREX_DME_Discrete') \
                 or opt.dataset == 'Patient_Split_2_Prime_TREX' or opt.dataset == 'Patient_Split_3_Prime_TREX':
             loss = train_Combined(train_loader, model, criterion, optimizer, epoch, opt)
         elif(opt.dataset == 'Prime_TREX_Alpha'):
