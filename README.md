@@ -20,7 +20,7 @@ Clinical_Data_Images.xlsx has the BCVA, CST, Eye ID, and Patient ID for the 7800
 ## Code Usage
 
 **Self-Supervised Experiments**:
-1. Go to the self_supervised directory and set the python path with: export PYTHONPATH=$PYTHONPATH:$PWD.
+1. Go to the **Biomarker Interpretation with Contrastive Learning** directory and set the python path with: export PYTHONPATH=$PYTHONPATH:$PWD.
 2. Train the backbone network with the supervised contrastive loss using the parameters specified in config/config_supcon.py \
 a) Specify number of clinical labels to train with --num_methods parameter \
 b) Specify which clinical labels to train with --method1, --method2, etc. \
