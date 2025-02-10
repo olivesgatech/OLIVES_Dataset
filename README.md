@@ -6,12 +6,17 @@ Clinical diagnosis of the eye is performed over multifarious data modalities inc
 ## Dataset
 **Images and Labels**: https://doi.org/10.5281/zenodo.7105232
 
+**Update (2/10/2025)**: The dataset (as separate disease classification and biomarker detection splits) is available on HuggingFace: https://huggingface.co/datasets/gOLIVES/OLIVES_Dataset 
+
 **Labels**:
 There are two directories for the labels: full_labels and ml_centric labels. 
 
 **Full labels** contain all the clinical inforamtion used in these studies for the associated studies of interest.
 
 **ML Centric labels** are divided into two files: Biomarker_Clinical_Data_Images.csv and Clinical_Data_Images.xlsx. 
+
+**Disease Classification Labels on Zenodo**:
+All images within the PRIME directory within Zenodo have DR, while images within TREX-DME directory have DME.
 
 Biomarker_Clinical_Data_Images.csv contains full biomarker and clinical labels for the 9408 images that have this labeled biomarker information.
 
